@@ -39,18 +39,23 @@ document.getElementById('ball').setAttribute("cx", ballX);
 break;
                 // Droite 
                 case 39:
-  if(ballX<15){ballX=15;}
+   ballX -= 15;
+  if(ballX<885){ballX=885;}
 document.getElementById('ball').setAttribute("cx", ballX);
 
 // Haut 
+         
+                 
                 case 38:
-
+ballX -= 15;
  if(ballX<15){ballX=15;}
 document.getElementById('ball').setAttribute("cx", ballX);
 
 // Bas 
+               
                 case 40:
- if(ballX<15){ballX=15;}
+                  ballX + =15;
+ if(ballX<400){ballX=15;}
 document.getElementById('ball').setAttribute("cx", ballX);
 
 
