@@ -17,7 +17,7 @@ function controler(){
 	if(document.getElementById('Control').checked){
 			alert("Bouton option coché");
 		}
-	else{alert("Bouton option OUI coché");}		
+	else{alert("Bouton option NON coché");}		
 }
 
 	</script>
@@ -34,6 +34,17 @@ function controler(){
 <hr/>
 <p>Option<input type="checkbox" id="Control"></p>
 <button onclick="controler()">Check</button>
+
+
+<html>
+<head>
+<script>
+function controler(){
+if(document.getElementById('Control').checked){
+document.getElementById('image1').style.display="Block";
+
+
+	
 
 
 </body>
