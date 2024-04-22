@@ -7,13 +7,17 @@ document.getElementById('image1').style.display="Block";
 }
 else{document.getElementById('image1').style.display="none";
     }
-}
-function controler(){
-if(document.getElementById('Contro2').checked){
+
+if(document.getElementById('Control2').checked){
 document.getElementById('image2').style.display="Block";
 }
-    else{document.getElementById('image1').style.display="none";
+    else{document.getElementById('image2').style.display="none";
+
+         if(document.getElementById('Control3').checked){
+document.getElementById('image2').style.display="Block";
 }
+    else{document.getElementById('image3').style.display="none";
+
 
   
 
@@ -29,13 +33,13 @@ document.getElementById('image2').style.display="Block";
 
   <h2>Image</h2>
 <hr/>
-<p>Option<input type="checkbox" id="Contro2"></p>
+<p>Option<input type="checkbox" id="Control2"></p>
 <button onclick="controler()">Check</button><br/>
 <img id="image1" src="Image2.jpg" style="display:None">
 
   <h3>Image</h3>
 <hr/>
-<p>Option<input type="checkbox" id="Contro3"></p>
+<p>Option<input type="checkbox" id="Control3"></p>
 <button onclick="controler()">Check</button><br/>
 <img id="image1" src="Image3.jpg" style="display:None">
 
