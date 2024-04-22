@@ -1,1 +1,31 @@
+<html>
+<head>
+<title>Mon Exercice JS N°2</title>
+<script>
 
+function afficher(){
+
+var saisie = parseInt(document.getElementById('V1').value);
+var resultat = "";
+
+for (j=0; j<saisie ; j++){
+        for (i=0; i<j+1; i++){
+                resultat += "*"; 
+        }
+                resultat += "</br>";
+        }
+
+document.getElementById('result').innerHTML = resultat;
+
+}
+
+</script>
+
+</head>
+<body>
+<h1>Les étoiles</h1>
+<p>Saisir un chiffre : <input id="V1"/></p>
+<button onclick="afficher()">Afficher</button>
+<div id="result"></div>
+</body>
+</html> 
