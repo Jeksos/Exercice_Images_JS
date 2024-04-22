@@ -1,49 +1,48 @@
 <html>
 <head>
+<meta charset="UTF-8"/>
+<title>mon exercice 1 JS</title>
+
 <script>
+
 function controler(){
-if(document.getElementById('Control').checked){
-document.getElementById('image1').style.display="Block";
-}
-else{document.getElementById('image1').style.display="none";
-    }
+
+if(document.getElementById('Control1').checked)
+{
+document.getElementById('image1').style.display="Block";}
+else{ document.getElementById('image1').style.display="None";}
 
 if(document.getElementById('Control2').checked){
-document.getElementById('image2').style.display="Block";
+document.getElementById('image2').style.display="Block";}
+else{document.getElementById('image2').style.display="None";}
+
+
+
+if(document.getElementById('Control3').checked){
+document.getElementById('image3').style.display="Block";
 }
-    else{document.getElementById('image2').style.display="none";
+else{document.getElementById('image3').style.display="None";}
 
-         if(document.getElementById('Control3').checked){
-document.getElementById('image2').style.display="Block";
-}
-    else{document.getElementById('image3').style.display="none";
-
-
-  
 
 }
+
 </script>
 </head>
 <body>
-<h1>Image</h1>
-<hr/>
-<p>Option<input type="checkbox" id="Control"></p>
-<button onclick="controler()">Check</button><br/>
-<img id="image1" src="Image1.jpg" style="display:None">
+<h2>Images à afficher ?</h2>
 
-  <h2>Image</h2>
-<hr/>
-<p>Option<input type="checkbox" id="Control2"></p>
-<button onclick="controler()">Check</button><br/>
-<img id="image1" src="Image2.jpg" style="display:None">
+<input type="checkbox" id="Control1">image 1 <br>
 
-  <h3>Image</h3>
-<hr/>
-<p>Option<input type="checkbox" id="Control3"></p>
-<button onclick="controler()">Check</button><br/>
-<img id="image1" src="Image3.jpg" style="display:None">
+<input type="checkbox" id="Control2">image 2 <br>
 
+<input type="checkbox" id="Control3">image 3 <br>
+<br>
 
+<button onclick="controler()">check</button> <br>
+
+<p > <img id="image1"src="./Image1.jpg" style="display:None" alt="image 1"></p>
+<p > <img id="image2" src="./Image2.jpg" style="display:None" alt="image 2"></p>
+<p > <img id="image3" src="./Image3.jpg" style="display:None" alt="image 3"></p>
 
 </body>
 </html>
