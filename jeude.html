@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script>
+      function lancer(){
+        var Val = Math.floor((Math.random() * 2)+1);
+        document.getElementById('C4').style.display = 'none';
+document.getElementById('C1').style.display = 'none';
+document.getElementById('C7').style.display = 'none';
+
+switch(Val){
+        case 1 :
+                    document.getElementById('C4').style.display = 'block';
+                    break;
+
+        case 2 :
+                    document.getElementById('C1').style.display = 'block';
+                    document.getElementById('C7').style.display = 'block';
+                    break;
+        }
+        
+      }
+    </script>  
+  </head>
+  <body>
+   <button onclick="lancer()">Lancer</button>
+     <svg width="300px" height="300px" style="background-color:lightgray">
+    
+   <circle id="C1" cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" style="display:none"/>
+   <circle id="C4" cx="150" cy="150" r="40" stroke="black" stroke-width="3" fill="red" style="display:none"/>
+  <circle id="C7" cx="250" cy="250" r="40" stroke="black" stroke-width="3" fill="red" style="display:none"/>
+
+  </svg> 
+</body>
+</html>
