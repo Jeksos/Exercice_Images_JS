@@ -1,1 +1,41 @@
 
+<html>
+<head>
+<script>
+function affichage(){
+	alert("Tout es OK !");
+}
+function cacher(){
+	document.getElementById('DuTexte').style.display="None";
+}
+function presenter(){
+	document.getElementById('DuTexte').style.display="Block";
+}
+
+	
+function controler(){
+	if(document.getElementById('Control').checked){
+			alert("Bouton option coché");
+		}
+	else{alert("Bouton option NON coché");}		
+}
+
+	</script>
+</head>
+<body>
+<h1>Mes outils</h1>
+<hr/>
+<h2>Boite de dialogue</h2>
+<button onclick="affichage()">Afficher</button>
+<hr/>
+<p id="DuTexte">Ma phrase de texte</p>
+<button onclick="presenter()">Presenter</button>
+<button onclick="cacher()">Cacher</button>
+<hr/>
+<p>Option<input type="checkbox" id="Control"></p>
+<button onclick="controler()">Check</button>
+
+
+</body>
+</html>
+
