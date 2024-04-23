@@ -47,67 +47,90 @@ function lance(){
 
     
        function trou1(){
-  var nombreRouge = nbRed();
-  if (nombreRouge == 3) {
-    alert("plus de choix disponible");
-    return;
-  }
           if(document.getElementById("C1").style.fill=="red"){
  document.getElementById("C1").style.fill="gray" ;
  
   }
-  else{document.getElementById("C1").style.fill="red";}  
+  else{
+      var nombreRouge = nbRed();
+      if (nombreRouge == 3) {
+        alert("plus de choix disponible");
+      }
+    else {
+      document.getElementById("C1").style.fill="red";
+    }
+  }  
 }
 
 function trou2(){
-  var nombreRouge = nbRed();
-  if (nombreRouge == 3) {
-    alert("plus de choix disponible");
-    return;
-  }
           if(document.getElementById("C2").style.fill=="red"){
  document.getElementById("C2").style.fill="gray";
-        
   }
-  else{document.getElementById("C2").style.fill="red";}
+  else {
+    var nombreRouge = nbRed();
+      if (nombreRouge == 3) {
+        alert("plus de choix disponible");
+      }
+    else {
+      document.getElementById("C2").style.fill="red";
+    }
 }
 
 function trou3(){
-  var nombreRouge = nbRed();
-  if (nombreRouge == 3) {
-    alert("plus de choix disponible");
-    return;
-  }
           if(document.getElementById("C3").style.fill=="red"){
  document.getElementById("C3").style.fill="gray";
   }
-  else{document.getElementById("C3").style.fill="red";}
+  else
+    {
+       var nombreRouge = nbRed();
+      if (nombreRouge == 3) {
+        alert("plus de choix disponible");
+      }
+    else {
+      document.getElementById("C3").style.fill="red";
+    }
 }
 
 function trou4(){
-  var nombreRouge = nbRed();
-  if (nombreRouge == 3) {
-    alert("plus de choix disponible");
-    return;
+  if(document.getElementById("C4").style.fill=="red"){
+   document.getElementById("C4").style.fill="gray";
   }
-          if(document.getElementById("C4").style.fill=="red"){
- document.getElementById("C4").style.fill="gray";
-  }
-  else{document.getElementById("C4").style.fill="red";}
+  else {
+    var nombreRouge = nbRed();
+      if (nombreRouge == 3) {
+        alert("plus de choix disponible");
+      }
+    else {
+      document.getElementById("C4").style.fill="red";
+    }
 }
 
 function trou5(){
           if(document.getElementById("C5").style.fill=="red"){
  document.getElementById("C5").style.fill="gray";
   }
-  else{document.getElementById("C5").style.fill="red";}
+  else {
+    var nombreRouge = nbRed();
+      if (nombreRouge == 3) {
+        alert("plus de choix disponible");
+      }
+    else {
+      document.getElementById("C5").style.fill="red";
+    }
 }
 
 function trou6(){
           if(document.getElementById("C6").style.fill=="red"){
  document.getElementById("C6").style.fill="gray";
   }
-  else{document.getElementById("C6").style.fill="red";}
+  else {
+    var nombreRouge = nbRed();
+      if (nombreRouge == 3) {
+        alert("plus de choix disponible");
+      }
+    else {
+      document.getElementById("C6").style.fill="red";
+    }
 }
 
        
