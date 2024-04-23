@@ -3,13 +3,15 @@
      <script>
      function lancer(){
            var Val = Math.floor((Math.random() * 6)+1);
-   if
-      document.getElementById("C"+Val).style.fill="blue";
-     (document.getElementById("C"+Val).style.fill=="purple"){alert("Looser");}
-   else{alert("Winner");}
+   if(document.getElementById("C"+Val).style.fill="red") {
+       document.getElementById("C"+Val).style.fill=="purple";
+      alert("Looser");
+   }
+     else {
+       document.getElementById("C"+Val).style.fill=="green";
+       alert("Winner");}
+     }
    
-   document.getElementById("C"+Val).style.fill="blue";
-
 }
 
 function lance(){
