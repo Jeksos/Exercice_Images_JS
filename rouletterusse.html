@@ -5,8 +5,11 @@
            var Val = Math.floor((Math.random() * 6)+1);
    if(document.getElementById("C"+Val).style.fill == "red") {
        document.getElementById("C"+Val).style.fill = "purple";
+       document.getElementById("TOTAL").innerText = 0;
       alert("Looser");
    }
+
+     
      else {
        document.getElementById("C"+Val).style.fill="green";
        var ancienneValeur = document.getElementById("TOTAL").innerText;
@@ -95,8 +98,9 @@ function trou6(){
  <button onclick="lancer()">Jouer</button> <br> <br>
  <button onclick="lance()">Rejouer</button>
 
- <p>GAIN</p>  <br>
- <p id="TOTAL"></p>
+ <p>GAIN : </p>
+ <p id="TOTAL">0</p>
+
   </body>
 
   </html>
