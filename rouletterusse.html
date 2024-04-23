@@ -8,14 +8,23 @@
        document.getElementById("TOTAL").innerText = 0;
       alert("Looser");
    }
-
-     
      else {
        document.getElementById("C"+Val).style.fill="green";
        var ancienneValeur = document.getElementById("TOTAL").innerText;
-       var cumul = Number(ancienneValeur) + 1000;
+      var nvGain = 0; 
+      var combienRouge =  nbRed();
+       if (combienRouge == 1) {
+         nvgain = 10000;
+       }
+       else if (combienRouge == 2) {
+         nvGain = 100000;
+       }
+       else if (combienRouge == 3) {
+         nvGain = 1000000;
+       }
+       var cumul = Number(ancienneValeur) + nvGain;
        document.getElementById("TOTAL").innerText = cumul;
-       alert("Winner 1000$ !");
+       alert("Winner !! You win " + nvGain + " $");
      }
    
 }
@@ -26,7 +35,18 @@ function lance(){
       }
   }
 
-       
+  function nbRed(){
+      var nbRed = 0;
+      for (j=1; j<=6 ; j++){
+            if (document.getElementById('C'+j ).style.fill == 'red') {
+               nbRed++;
+            }
+      }
+
+    return nbRed;
+  }
+
+    
        function trou1(){
           if(document.getElementById("C1").style.fill=="red"){
  document.getElementById("C1").style.fill="gray" ;
