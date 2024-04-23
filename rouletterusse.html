@@ -10,7 +10,7 @@
      else {
        document.getElementById("C"+Val).style.fill="green";
        var ancienneValeur = document.getElementById("TOTAL").innerText;
-       var cumul = ancienneValeur + "1000"
+       var cumul = Number(ancienneValeur) + 1000;
        document.getElementById("TOTAL").innerText = cumul;
        alert("Winner 1000$ !");
      }
