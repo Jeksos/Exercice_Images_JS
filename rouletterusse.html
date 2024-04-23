@@ -8,16 +8,31 @@
     
     <circle cx="150" cy="150" r="20" stroke="black" stroke-width="3" fill="black" />
 
-    <circle cx="67" cy="100" r="40" stroke="black" stroke-width="3" fill="black" />
-    <circle cx="150" cy="250" r="40" stroke="black" stroke-width="3" fill="black" />
-    <circle cx="67" cy="200" r="40" stroke="black" stroke-width="3" fill="black" />
-    <circle cx="233" cy="200" r="40" stroke="black" stroke-width="3" fill="black" />
-    <circle cx="150" cy="50" r="40" stroke="black" stroke-width="3" fill="black" />
-    <circle cx="233" cy="100" r="40" stroke="black" stroke-width="3" fill="black" />
-
-
+    <circle id="C1" cx="67" cy="100" r="40" stroke="black" stroke-width="3" fill="black" />
+    <circle id="C2" cx="150" cy="250" r="40" stroke="black" stroke-width="3" fill="black" />
+    <circle id="C3" cx="67" cy="200" r="40" stroke="black" stroke-width="3" fill="black" />
+    <circle  id="C4" cx="233" cy="200" r="40" stroke="black" stroke-width="3" fill="black" />
+    <circle id="C5"  cx="150" cy="50" r="40" stroke="black" stroke-width="3" fill="black" />
+    <circle id="C6" cx="233" cy="100" r="40" stroke="black" stroke-width="3" fill="black" />
       
     </svg> 
+    <script>
+      function lancer(){
+        var Val = Math.floor((Math.random() * 5)+1);
+        document.getElementById('C4').style.display = 'none';
+document.getElementById('C1').style.display = 'none';
+document.getElementById('C7').style.display = 'none';
+ </script>
+
+
+ <button onclick="lancer()">Jouer</button>
+
+
+
+
+
+
+    
 
 
  </head>
