@@ -3,14 +3,15 @@
      <script>
      function lancer(){
            var Val = Math.floor((Math.random() * 6)+1);
-   if(document.getElementById("C"+Val).style.fill=="red") {
-       document.getElementById("C"+Val).style.fill="purple";
+   if(document.getElementById("C"+Val).style.fill == "red") {
+       document.getElementById("C"+Val).style.fill = "purple";
       alert("Looser");
    }
      else {
        document.getElementById("C"+Val).style.fill="green";
-       document.getElementById("TOTAL").innerText="1000";
-      
+       var ancienneValeur = document.getElementById("TOTAL").innerText;
+       var cumul = ancienneValeur + "1000"
+       document.getElementById("TOTAL").innerText = cumul;
        alert("Winner 1000$ !");
      }
    
