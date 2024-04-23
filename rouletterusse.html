@@ -1,10 +1,14 @@
 <html>
   <head>
      <script>
-      function lancer(){
-        var Val = Math.floor((Math.random() * 6)+1);
-        document.getElementById('C' + Val ).style.fill = 'purple';
-              }
+     function lancer(){
+           var Val = Math.floor((Math.random() * 6)+1);
+   if(document.getElementById("C"+Val).style.fill=="purple"){alert("Looser");}
+   else{alert("Winner");}
+   
+   document.getElementById("C"+Val).style.fill="blue";
+
+}
 
 function lance(){
       for (j=1; j<=6 ; j++){
@@ -77,7 +81,7 @@ function trou6(){
     </svg> 
    
 
-
+<br><br>
  <button onclick="lancer()">Jouer</button> <br> <br>
  <button onclick="lance()">Rejouer</button>
 
