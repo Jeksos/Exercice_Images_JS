@@ -9,6 +9,8 @@
    }
      else {
        document.getElementById("C"+Val).style.fill="green";
+       document.getElementById("TOTAL").text="1000";
+      
        alert("Winner 1$ !");
      }
    
@@ -93,7 +95,7 @@ function trou6(){
  <button onclick="lance()">Rejouer</button>
 
  <p>GAIN</p>  <br>
- <p>""</p>
+ <p id="TOTAL"></p>
   </body>
 
   </html>
